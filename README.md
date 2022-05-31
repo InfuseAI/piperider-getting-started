@@ -34,7 +34,7 @@ This is the demo project for piperider getting started.
 1. Run piperider again
 
    ```bash
-   piperider run --generate-report 
+   piperider-cli run --generate-report 
    ```
 
 1. Compare two runs
