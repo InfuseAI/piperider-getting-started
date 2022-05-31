@@ -25,3 +25,22 @@ This is the demo project for piperider getting started.
 
 1. Open the piperider report files printed in the stdout.   
 
+1. Download another sqlite data
+
+   ```bash
+   curl -o data/sp500.db https://piperider-data.s3.ap-northeast-1.amazonaws.com/getting-started/sp500_20220527.db
+   ```
+
+1. Run piperider again
+
+   ```bash
+   piperider run --generate-report 
+   ```
+
+1. Compare two runs
+
+   ```bash
+   piperider compare-report
+   ```
+
+   and select the runs you would like to compare
