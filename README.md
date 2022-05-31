@@ -20,7 +20,7 @@ This is the demo project for piperider getting started.
 1. Run the piperider
 
    ```bash
-   piperider run --generate-report 
+   piperider-cli run --generate-report 
    ```
 
 1. Open the piperider report files printed in the stdout.   
@@ -40,7 +40,7 @@ This is the demo project for piperider getting started.
 1. Compare two runs
 
    ```bash
-   piperider compare-report
+   piperider-cli compare-report
    ```
 
    and select the runs you would like to compare
