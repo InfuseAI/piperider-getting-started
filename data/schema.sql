@@ -1,0 +1,52 @@
+DROP TABLE IF EXISTS SYMBOL;
+create TABLE SYMBOL (
+	SYMBOL VARCHAR(16777216),
+	NAME VARCHAR(16777216),
+	START_DATE DATE,
+	END_DATE DATE,
+	DESCRIPTION VARCHAR(16777216),
+	EXCHANGE_CODE VARCHAR(16777216),
+	MARKET VARCHAR(16777216),
+	COUNTRY VARCHAR(16777216),
+	SECTOR VARCHAR(16777216),
+	INDUSTRY VARCHAR(16777216),
+	RECOMMENDATION_KEY VARCHAR(16777216)
+);
+.mode csv
+.import --csv --skip 1 symbol.csv symbol
+
+-- 
+drop TABLE IF EXISTS PRICE;
+create TABLE PRICE (
+	SYMBOL VARCHAR(16777216),
+	DATE DATE,
+	OPEN NUMBER(10,2),
+	HIGH NUMBER(10,2),
+	LOW NUMBER(10,2),
+	CLOSE NUMBER(10,2),
+	VOLUME NUMBER(38,0),
+	ADJCLOSE NUMBER(10,2),
+	MA5 NUMBER(10,2),
+	MA20 NUMBER(10,2),
+	MA60 NUMBER(10,2)
+);
+.mode csv
+.import --csv --skip 1 price.csv price
+update price set ma5=null where ma5="";
+update price set ma20=null where ma20="";
+update price set ma60=null where ma60="";
+
+-- 
+drop TABLE IF EXISTS ACTION;
+create TABLE ACTION (
+	SYMBOL VARCHAR(16777216),
+	DATE DATE,
+	DIVIDENDS NUMBER(8,4),
+	SPLITS NUMBER(10,2)
+);
+.mode csv
+.import --csv --skip 1 action.csv action
+
+
+
+

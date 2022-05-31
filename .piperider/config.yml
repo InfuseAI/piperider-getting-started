@@ -1,0 +1,3 @@
+dataSources:
+- name: piperider-demo
+  type: sqlite
