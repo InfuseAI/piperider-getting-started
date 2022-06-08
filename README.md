@@ -1,7 +1,6 @@
 # Piperider Getting Started
 
-This is the demo project for piperider getting started.
-
+This is the getting started project for [piperider](https://github.com/InfuseAI/piperider)
 
 # Steps
 
@@ -14,13 +13,13 @@ This is the demo project for piperider getting started.
 1. Install piperider
 
    ```bash
-   pip install piperider-cli
+   pip install piperider
    ```
 
 1. Run the piperider
 
    ```bash
-   piperider-cli run --generate-report 
+   piperider run --generate-report 
    ```
 
 1. Open the piperider report files printed in the stdout.   
@@ -34,13 +33,13 @@ This is the demo project for piperider getting started.
 1. Run piperider again
 
    ```bash
-   piperider-cli run --generate-report 
+   piperider run --generate-report 
    ```
 
 1. Compare two runs
 
    ```bash
-   piperider-cli compare-report
+   piperider compare-report
    ```
 
-   and select the runs you would like to compare
+   and select the reports you would like to compare
