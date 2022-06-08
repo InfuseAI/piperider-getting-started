@@ -4,10 +4,11 @@ This is the getting started project for [piperider](https://github.com/InfuseAI/
 
 # Steps
 
-1. Download the sqlite data
+1. Clone the project
 
    ```bash
-   curl -o data/sp500.db https://piperider-data.s3.ap-northeast-1.amazonaws.com/getting-started/sp500_20220401.db
+   git clone git@github.com:InfuseAI/piperider-getting-started.git
+   cd piperider-getting-started/
    ```
 
 1. Install piperider
@@ -16,13 +17,37 @@ This is the getting started project for [piperider](https://github.com/InfuseAI/
    pip install piperider
    ```
 
+1. Download the sqlite data
+
+   ```bash
+   curl -o data/sp500.db https://piperider-data.s3.ap-northeast-1.amazonaws.com/getting-started/sp500_20220401.db
+   ```
+
+1. Init a piperider project. 
+
+   <details>
+    <summary>You can skip this step because this is already a piperider project. If you would like to try to init the project on you own, you can try this</summary>
+
+    ```bash
+    rm -rf .piperider/
+    piperider init   
+    ```
+
+    Input these options 
+   
+    - **project name**: demo
+    - **data source type**: sqlite
+    - **path to database file**: data/sp500.db
+
+   </details>   
+
 1. Run the piperider
 
    ```bash
    piperider run --generate-report 
    ```
 
-1. Open the piperider report files printed in the stdout.   
+1. Open the piperider report files printed in the command output
 
 1. Download another sqlite data
 
