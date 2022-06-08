@@ -14,7 +14,7 @@ This is the getting started project for [piperider](https://github.com/InfuseAI/
 1. Install piperider
 
    ```bash
-   pip install piperider
+   pip install -U piperider
    ```
 
 1. Download the sqlite data
