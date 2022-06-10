@@ -41,6 +41,12 @@ This is the getting started project for [piperider](https://github.com/InfuseAI/
 
    </details>   
 
+1. Diagnose if the data source is well-configured
+
+   ```
+   piperider diagnose
+   ```
+
 1. Run the piperider
 
    ```bash
