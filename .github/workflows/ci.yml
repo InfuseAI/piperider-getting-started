@@ -1,0 +1,24 @@
+name: piperider-ci
+env:
+  ACTIONS_STEP_DEBUG: true
+
+on:
+  pull_request:
+    branches: [ main ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  piperider-ci:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+
+      - name: prepare sqlite db
+        run: curl -o data/sp500.db https://piperider-data.s3.ap-northeast-1.amazonaws.com/getting-started/sp500_20220401.db
+
+      - name: PipeRider CLI Action
+        uses: InfuseAI/piperider-action@v0.1.3.17-alpha
