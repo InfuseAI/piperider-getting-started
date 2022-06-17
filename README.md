@@ -7,7 +7,7 @@ This is the getting started project for [piperider](https://github.com/InfuseAI/
 1. Clone the project
 
    ```bash
-   git clone git@github.com:InfuseAI/piperider-getting-started.git
+   git clone https://github.com/InfuseAI/piperider-getting-started.git
    cd piperider-getting-started/
    ```
 
