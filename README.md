@@ -50,7 +50,7 @@ This is the getting started project for [piperider](https://github.com/InfuseAI/
 1. Run the piperider
 
    ```bash
-   piperider run --generate-report 
+   piperider run 
    ```
 
 1. Open the piperider report files printed in the command output
@@ -64,7 +64,7 @@ This is the getting started project for [piperider](https://github.com/InfuseAI/
 1. Run piperider again
 
    ```bash
-   piperider run --generate-report 
+   piperider run 
    ```
 
 1. Compare two runs
