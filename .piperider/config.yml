@@ -1,4 +1,5 @@
 dataSources:
 - name: piperider-demo
   type: sqlite
-id: 76c2dbd680f745cebddd2743c69c672e
+telemetry:
+  id: 76c2dbd680f745cebddd2743c69c672e
