@@ -70,7 +70,7 @@ This is the getting started project for [piperider](https://github.com/InfuseAI/
 1. Compare two runs
 
    ```bash
-   piperider compare-report
+   piperider compare-reports
    ```
 
    and select the reports you would like to compare
