@@ -4,3 +4,4 @@ logs/
 outputs/
 reports/
 comparisons/
+.unsend_events.json

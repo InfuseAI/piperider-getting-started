@@ -2,9 +2,9 @@
 PRICE:  # Table Name
   # Test Cases for Table
   tests:
-  - name: assert_row_count_in_range
+  - metric: row_count
     assert:
-      count: [1, 10000000]
+      lt: 1000000
   columns:
     SYMBOL:
       tests: []
@@ -13,36 +13,28 @@ PRICE:  # Table Name
       tests: []
     OPEN: # Column Name
       tests:
-      - name: assert_column_min_in_range
+      - name: assert_column_value
         assert:
-          min: [0, 50]
-      - name: assert_column_max_in_range
-        assert:
-          max: [0, 100000]
+          gte: 0
+          lt: 1000000
     HIGH: # Column Name
       tests:
-      - name: assert_column_min_in_range
+      - name: assert_column_value
         assert:
-          min: [0, 50]
-      - name: assert_column_max_in_range
-        assert:
-          max: [0, 100000]
+          gte: 0
+          lt: 1000000
     LOW: # Column Name
       tests:
-      - name: assert_column_min_in_range
+      - name: assert_column_value
         assert:
-          min: [0, 50]
-      - name: assert_column_max_in_range
-        assert:
-          max: [0, 100000]
+          gte: 0
+          lt: 1000000
     CLOSE: # Column Name
       tests:
-      - name: assert_column_min_in_range
+      - name: assert_column_value
         assert:
-          min: [0, 50]
-      - name: assert_column_max_in_range
-        assert:
-          max: [0, 100000]
+          gte: 0
+          lt: 1000000
     VOLUME: # Column Name
       # Test Cases for Column
       tests: []
